@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Portfolio.css';
+import './css/Portfolio.css';
 
 const Portfolio = () => {
   const projects = [

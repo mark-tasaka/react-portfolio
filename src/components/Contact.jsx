@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Contact.css';
 
 const Contact = () => {
@@ -27,15 +28,15 @@ const Contact = () => {
       <header className="site-header">
         <div className="logo-container">
           <div className="logo">
-            <a href="/work">Mark Tasaka</a>
+            <Link to="/work">Mark Tasaka</Link>
           </div>
         </div>
         <nav className="nav-container">
           <div className="gallery-title">
-            <a href="/work">Work</a>
+            <Link to="/work">Work</Link>
           </div>
           <div className="page-title">
-            <a href="/contact" className="active">Contact</a>
+            <Link to="/contact" className="active">Contact</Link>
           </div>
           <div className="social">
             <ul>

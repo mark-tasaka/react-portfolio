@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -46,15 +47,15 @@ const Portfolio = () => {
       <header className="site-header">
         <div className="logo-container">
           <div className="logo">
-            <a href="/work">Mark Tasaka</a>
+            <Link to="/work">Mark Tasaka</Link>
           </div>
         </div>
         <nav className="nav-container">
           <div className="gallery-title">
-            <a href="/work" className="active">Work</a>
+            <Link to="/work" className="active">Work</Link>
           </div>
           <div className="page-title">
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </div>
           <div className="social">
             <ul>

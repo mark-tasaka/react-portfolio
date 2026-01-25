@@ -6,42 +6,36 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Optimal Treats",
-      date: "2022",
       image: "/images/cover/optimal-treats.jpg",
       link: "/optimal-treats"
     },
     {
       id: 2,
       title: "Enso Blend",
-      date: "2022",
       image: "/images/cover/enso-blend.jpg",
       link: "/enso-blend"
     },
     {
       id: 3,
       title: "UFO Report",
-      date: "2022",
       image: "/images/cover/ufo.jpg",
       link: "/ufo-report"
     },
     {
       id: 4,
       title: "Adara Fusion",
-      date: "2022",
       image: "/images/cover/adara.jpg",
       link: "/adara-fusion"
     },
     {
       id: 5,
       title: "Koi Bento",
-      date: "2022",
       image: "/images/cover/koi-bento.jpg",
       link: "/koi-bento"
     },
     {
       id: 6,
       title: "End UAP Secrecy",
-      date: "2022",
       image: "/images/cover/uap-secrecy.jpg",
       link: "/end-uap-secrecy"
     }
@@ -112,7 +106,6 @@ const Portfolio = () => {
                   <div className="details">
                     <div className="details-inner">
                       <div className="title">{project.title}</div>
-                      <div className="date">{project.date}</div>
                     </div>
                   </div>
                 </div>

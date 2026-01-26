@@ -1,4 +1,4 @@
-/* EndUapSecrecy.css */
+/* Pages.css - Shared project page styles */
 
 .project-container {
   min-height: 100vh;
@@ -98,41 +98,6 @@
   display: block;
 }
 
-/* Back to Top Styles */
-.back-to-top {
-  text-align: center;
-  padding: 60px 0 40px 0;
-  border-top: 1px solid #eaeaea;
-  margin-top: 40px;
-}
-
-.back-to-top a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #333333;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.3s ease, transform 0.3s ease;
-  padding: 12px 20px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  background-color: #fafafa;
-}
-
-.back-to-top a:hover {
-  color: #007acc;
-  transform: translateY(-2px);
-  background-color: #f0f9ff;
-  border-color: #007acc;
-}
-
-.back-to-top .arrow {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .page-container {
@@ -165,10 +130,6 @@
   .image-description {
     font-size: 1.1rem;
   }
-  
-  .back-to-top {
-    padding: 40px 0 30px 0;
-  }
 }
 
 @media (max-width: 480px) {
@@ -183,16 +144,6 @@
   .image-description {
     font-size: 1rem;
   }
-  
-  .back-to-top a {
-    font-size: 0.9rem;
-    padding: 10px 16px;
-  }
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
 }
 
 /* Loading animation for images */

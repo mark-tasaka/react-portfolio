@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import EndUapSecrecy from './components/EndUapSecrecy';
+import KoiBento from './components/KoiBento';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/work" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/end-uap-secrecy" element={<EndUapSecrecy />} />
+          <Route path="/koi-bento" element={<KoiBento />} />
         </Routes>
       </div>
     </Router>

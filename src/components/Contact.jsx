@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="top">
       <Header activePage="contact" />
 
       <main>
@@ -103,7 +103,7 @@ const Contact = () => {
         </section>
 
         <section className="back-to-top">
-          <a href="#">
+          <a href="#top">  
             <span className="arrow">↑</span>
             <span>Back to Top</span>
           </a>

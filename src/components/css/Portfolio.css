@@ -33,7 +33,7 @@ body {
 }
 
 .project-cover:hover {
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
 }
 
 .cover-content-container {

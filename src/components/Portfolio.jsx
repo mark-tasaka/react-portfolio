@@ -43,7 +43,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="portfolio-container">
+    <div className="portfolio-container" id="top"> 
       <Header activePage="work" />
 
       <main>
@@ -77,7 +77,7 @@ const Portfolio = () => {
         </section>
 
         <section className="back-to-top">
-          <a href="#">
+          <a href="#top">  
             <span className="arrow">↑</span>
             <span>Back to Top</span>
           </a>

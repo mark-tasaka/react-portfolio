@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './inc/Header';
 import { ProjectLayout, ProjectGallery, BackToTop } from './inc/Module';
 import './css/Pages.css';
@@ -60,6 +60,15 @@ const UFO = () => {
   const projectDescription = `'UFO Report: Scientific Study of UAPs' is a fictional magazine that focuses on applying scientific research to the study of Unidentified Aerial Phenomenon, or UAP for short (UAP is the term for UFOs commonly used by the scientific and defense communities). UFO Report takes a serious look at the study UAP, using the scientific methods to examine the UFO phenomenon. Therefore, it was important that I took a 'serious scientific look' in the presentation of the magazine, which will appeal to an audience that wishes to explore the topic in a serious manner.
 
 To reflect this, I choose a 'conservative style to the design of the magazine, by using black and white text, with the photos and text fitting neatly on the page. I used the two-column approach to the text (versus the three-column), as I felt this look better mirrors academic and scientific publications. As well, I choose a font (Acumin) that matches the scientific look of the magazine.`;
+
+
+  useEffect(() => {
+    document.title = `Mark Tasaka - ${projectTitle}`;
+    return () => {
+      document.title = "Mark Tasaka";
+    };
+  }, [projectTitle]);
+
 
   return (
     <ProjectLayout activePage="work">

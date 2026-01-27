@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './inc/Header';
 import { ProjectLayout, ProjectGallery, BackToTop } from './inc/Module';
 import './css/Pages.css';
@@ -157,6 +157,14 @@ const EnsoBlend = () => {
 
   const projectTitle = "Enso Blend";
   const projectDescription = `Enso Blend is a branding project for a fictional lines of green tea fusion teas. The word 'Enso' is of Japanese origins and refers to the calligraphy Zen circle. The style of this product emulates a traditional Japanese style; distinct colours are selected for the different tea blends. Gradient colour backgrounds, as opposed to solid colours, are used to represent the blending cultures in the fusions of the tea flavours.`;
+
+    useEffect(() => {
+    document.title = `Mark Tasaka - ${projectTitle}`;
+    return () => {
+      document.title = "Mark Tasaka";
+    };
+  }, [projectTitle]);
+
 
   return (
     <ProjectLayout activePage="work">

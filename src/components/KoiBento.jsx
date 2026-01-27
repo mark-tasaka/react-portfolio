@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './inc/Header';
 import { ProjectLayout, ProjectGallery, BackToTop } from './inc/Module';
 import './css/Pages.css';
@@ -76,6 +76,15 @@ const KoiBento = () => {
     traditional 'Zen water garden' look, I selected a font and colours that captures this environment. 
     The font I selected is a Japanese style brush font and used a solid black background. I used a 
     minimalist style, with a simple logo and bold solid colours.`;
+
+    
+  useEffect(() => {
+    document.title = `Mark Tasaka - ${projectTitle}`;
+    return () => {
+      document.title = "Mark Tasaka";
+    };
+  }, [projectTitle]);
+
 
   return (
     <ProjectLayout activePage="work">

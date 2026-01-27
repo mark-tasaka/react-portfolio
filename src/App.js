@@ -6,6 +6,7 @@ import EndUapSecrecy from './components/EndUapSecrecy';
 import KoiBento from './components/KoiBento';
 import AdaraFusion from './components/AdaraFusion';
 import UFO from './components/UFO';
+import EnsoBlend from './components/EnsoBlend';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/koi-bento" element={<KoiBento />} />
           <Route path="/adara-fusion" element={<AdaraFusion />} />
           <Route path="/ufo-report" element={<UFO />} />
+          <Route path="/enso-blend" element={<EnsoBlend />} />
         </Routes>
       </div>
     </Router>

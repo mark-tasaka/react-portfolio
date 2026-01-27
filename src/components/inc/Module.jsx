@@ -81,6 +81,15 @@ export const ImageModule = ({ item }) => {
           />
           <ImageDescription description={item.description} />
         </div>
+      ) : item.type === 'triple' ? (
+        <div className="project-module module triple-images">
+          <ImageTriple 
+            leftImage={item.images[0]}
+            centerImage={item.images[1]}
+            rightImage={item.images[2]}
+          />
+          <ImageDescription description={item.description} />
+        </div>
       ) : (
         <>
           <div className="project-module module image">
@@ -138,3 +147,32 @@ export const ProjectPage = ({ title, description, images, activePage = "work", H
     </ProjectLayout>
   );
 };
+
+// Add these new components to your existing Module.jsx
+
+// 10. Image Triple Component (three images side by side)
+export const ImageTriple = ({ leftImage, centerImage, rightImage }) => {
+  return (
+    <div className="image-triple-container">
+      <div className="triple-image">
+        <ProjectImage 
+          src={leftImage.src}
+          alt={leftImage.alt}
+        />
+      </div>
+      <div className="triple-image">
+        <ProjectImage 
+          src={centerImage.src}
+          alt={centerImage.alt}
+        />
+      </div>
+      <div className="triple-image">
+        <ProjectImage 
+          src={rightImage.src}
+          alt={rightImage.alt}
+        />
+      </div>
+    </div>
+  );
+};
+

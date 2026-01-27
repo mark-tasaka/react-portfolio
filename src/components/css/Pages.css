@@ -130,6 +130,38 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Triple Images Styles */
+.triple-images {
+  margin-bottom: 20px;
+}
+
+.image-triple-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.triple-image {
+  flex: 1;
+}
+
+.triple-image .project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.triple-image .project-image:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .page-container {
@@ -170,6 +202,14 @@
   .paired-image {
     width: 100%;
   }
+  .image-triple-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .triple-image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -186,6 +226,9 @@
   }
   
   .image-pair-container {
+    gap: 15px;
+  }
+  .image-triple-container {
     gap: 15px;
   }
 }
@@ -231,4 +274,17 @@
 
 .paired-image:nth-child(2) .project-image {
   animation-delay: 0.2s;
+}
+
+/* Animation for triple images */
+.triple-image:nth-child(1) .project-image {
+  animation-delay: 0.1s;
+}
+
+.triple-image:nth-child(2) .project-image {
+  animation-delay: 0.2s;
+}
+
+.triple-image:nth-child(3) .project-image {
+  animation-delay: 0.3s;
 }

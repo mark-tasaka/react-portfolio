@@ -33,8 +33,7 @@
 .gallery-title a:hover,
 .page-title a.active,
 .page-title a:hover {
-  color: #333;
-  font-weight: 600;
+  color: #000000;
 }
 
 .social ul {

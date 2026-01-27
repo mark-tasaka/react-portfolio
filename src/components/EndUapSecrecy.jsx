@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './inc/Header';
 import { ProjectLayout, ProjectGallery, BackToTop } from './inc/Module';
 import './css/Pages.css';
@@ -40,6 +40,16 @@ const EndUapSecrecy = () => {
     UAPs, short for Unidentified Aerial Phenomena, is an alternative term for UFOs, which has been adopted 
     for the scientific study of the phenomenon. The goal of this project is to create affordable and highly 
     visible branding materials, which takes the form of vinyl laptop stickers, bumper stickers and mugs.`;
+
+  // Update document title when component mounts
+  useEffect(() => {
+    document.title = `Mark Tasaka - ${projectTitle}`;
+    
+    // Cleanup: reset title when component unmounts (optional)
+    return () => {
+      document.title = "Mark Tasaka";
+    };
+  }, [projectTitle]);
 
   return (
     <ProjectLayout activePage="work">

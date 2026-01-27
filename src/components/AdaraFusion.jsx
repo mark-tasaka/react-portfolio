@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './inc/Header';
 import { ProjectLayout, ProjectGallery, BackToTop } from './inc/Module';
 import './css/Pages.css';
@@ -123,6 +123,14 @@ const AdaraFusion = () => {
   const projectDescription = `Adara is a fictional Greek-Western fusion restaurant located in Vancouver. The word Adara is a Greek word that translates into 'beauty', which I believe captures the atmosphere and the quality of food served in a fine dining restaurant. The font 'Romanica' is used as it embodies the look and feel of the Ancient World (Roman Empire, Ancient Greece, etc.). A Laurel Wreath is part of the restaurant's title as laurel wreaths are symbols from Greek Mythology.
 
 The colour blue is a popular colour for Greek restaurants. Thus, when selecting a colour for the cover of the menu, I choose to select a tone of blue. While Greek restaurants typically use a lighter tone of blue, I choose a darker tone as navy blue is historically associated with the aristocracy and wealth; thus, fitting better with the atmosphere of a fine dinning restaurant. Since the interior of the restaurant is dimly lit (candle lights, low intensity light bulbs, etc.), the interior of the menu consists of high-quality white paper with black text. Due to the glare of a digital tablet, the digital menu consists of a black background with white text.`;
+
+  // Add this useEffect
+  useEffect(() => {
+    document.title = `Mark Tasaka - ${projectTitle}`;
+    return () => {
+      document.title = "Mark Tasaka";
+    };
+  }, [projectTitle]);
 
   return (
     <ProjectLayout activePage="work">

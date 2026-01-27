@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './inc/Header';
-import { ProjectPage } from './inc/Module';
+import { ProjectLayout, ProjectGallery, BackToTop } from './inc/Module';
 import './css/Pages.css';
 
 const EndUapSecrecy = () => {
@@ -42,13 +42,19 @@ const EndUapSecrecy = () => {
     visible branding materials, which takes the form of vinyl laptop stickers, bumper stickers and mugs.`;
 
   return (
-    <ProjectPage 
-      title={projectTitle}
-      description={projectDescription}
-      images={projectImages}
-      activePage="work"
-      Header={Header}
-    />
+    <ProjectLayout activePage="work">
+      <Header activePage="work" />
+      <main>
+        <section className="page standard-modules">
+          <header className="page-header content">
+            <h1 className="title">{projectTitle}</h1>
+            <p className="description">{projectDescription}</p>
+          </header>
+          <ProjectGallery images={projectImages} />
+        </section>
+        <BackToTop />
+      </main>
+    </ProjectLayout>
   );
 };
 

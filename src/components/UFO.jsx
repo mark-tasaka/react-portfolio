@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './inc/Header';
-import { ProjectPage } from './inc/Module';
+import { ProjectLayout, ProjectGallery, BackToTop } from './inc/Module';
 import './css/Pages.css';
 
 const UFO = () => {
@@ -62,13 +62,19 @@ const UFO = () => {
 To reflect this, I choose a 'conservative style to the design of the magazine, by using black and white text, with the photos and text fitting neatly on the page. I used the two-column approach to the text (versus the three-column), as I felt this look better mirrors academic and scientific publications. As well, I choose a font (Acumin) that matches the scientific look of the magazine.`;
 
   return (
-    <ProjectPage 
-      title={projectTitle}
-      description={projectDescription}
-      images={projectImages}
-      activePage="work"
-      Header={Header}
-    />
+    <ProjectLayout activePage="work">
+      <Header activePage="work" />
+      <main>
+        <section className="page standard-modules">
+          <header className="page-header content">
+            <h1 className="title">{projectTitle}</h1>
+            <p className="description">{projectDescription}</p>
+          </header>
+          <ProjectGallery images={projectImages} />
+        </section>
+        <BackToTop />
+      </main>
+    </ProjectLayout>
   );
 };
 

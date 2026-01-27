@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './inc/Header';
-import { ProjectPage } from './inc/Module';
+import { ProjectLayout, ProjectGallery, BackToTop } from './inc/Module';
 import './css/Pages.css';
 
 const AdaraFusion = () => {
@@ -125,13 +125,19 @@ const AdaraFusion = () => {
 The colour blue is a popular colour for Greek restaurants. Thus, when selecting a colour for the cover of the menu, I choose to select a tone of blue. While Greek restaurants typically use a lighter tone of blue, I choose a darker tone as navy blue is historically associated with the aristocracy and wealth; thus, fitting better with the atmosphere of a fine dinning restaurant. Since the interior of the restaurant is dimly lit (candle lights, low intensity light bulbs, etc.), the interior of the menu consists of high-quality white paper with black text. Due to the glare of a digital tablet, the digital menu consists of a black background with white text.`;
 
   return (
-    <ProjectPage 
-      title={projectTitle}
-      description={projectDescription}
-      images={projectImages}
-      activePage="work"
-      Header={Header}
-    />
+    <ProjectLayout activePage="work">
+      <Header activePage="work" />
+      <main>
+        <section className="page standard-modules">
+          <header className="page-header content">
+            <h1 className="title">{projectTitle}</h1>
+            <p className="description">{projectDescription}</p>
+          </header>
+          <ProjectGallery images={projectImages} />
+        </section>
+        <BackToTop />
+      </main>
+    </ProjectLayout>
   );
 };
 

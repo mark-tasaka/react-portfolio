@@ -11,17 +11,7 @@ export const ProjectLayout = ({ children, activePage = "work" }) => {
   );
 };
 
-// 2. Project Header Component
-export const ProjectHeader = ({ title, description }) => {
-  return (
-    <header className="page-header content">
-      <h1 className="title">{title}</h1>
-      <p className="description">{description}</p>
-    </header>
-  );
-};
-
-// 3. Single Image Component
+// 2. Single Image Component
 export const ProjectImage = ({ src, alt, className = "project-image" }) => {
   return (
     <div className="lightbox-link">
@@ -34,7 +24,7 @@ export const ProjectImage = ({ src, alt, className = "project-image" }) => {
   );
 };
 
-// 4. Image Pair Component
+// 3. Image Pair Component
 export const ImagePair = ({ leftImage, rightImage }) => {
   return (
     <div className="image-pair-container">
@@ -45,6 +35,32 @@ export const ImagePair = ({ leftImage, rightImage }) => {
         />
       </div>
       <div className="paired-image">
+        <ProjectImage 
+          src={rightImage.src}
+          alt={rightImage.alt}
+        />
+      </div>
+    </div>
+  );
+};
+
+// 4. Image Triple Component
+export const ImageTriple = ({ leftImage, centerImage, rightImage }) => {
+  return (
+    <div className="image-triple-container">
+      <div className="triple-image">
+        <ProjectImage 
+          src={leftImage.src}
+          alt={leftImage.alt}
+        />
+      </div>
+      <div className="triple-image">
+        <ProjectImage 
+          src={centerImage.src}
+          alt={centerImage.alt}
+        />
+      </div>
+      <div className="triple-image">
         <ProjectImage 
           src={rightImage.src}
           alt={rightImage.alt}
@@ -69,7 +85,7 @@ export const ImageDescription = ({ description }) => {
   );
 };
 
-// 6. Image Module Component (handles both single and paired images)
+// 6. Image Module Component (handles single, pair, and triple images)
 export const ImageModule = ({ item }) => {
   return (
     <div key={item.id}>
@@ -131,48 +147,3 @@ export const ProjectGallery = ({ images }) => {
     </div>
   );
 };
-
-// 9. Complete Project Page Component
-export const ProjectPage = ({ title, description, images, activePage = "work", Header }) => {
-  return (
-    <ProjectLayout activePage={activePage}>
-      <Header activePage={activePage} />
-      <main>
-        <section className="page standard-modules">
-          <ProjectHeader title={title} description={description} />
-          <ProjectGallery images={images} />
-        </section>
-        <BackToTop />
-      </main>
-    </ProjectLayout>
-  );
-};
-
-// Add these new components to your existing Module.jsx
-
-// 10. Image Triple Component (three images side by side)
-export const ImageTriple = ({ leftImage, centerImage, rightImage }) => {
-  return (
-    <div className="image-triple-container">
-      <div className="triple-image">
-        <ProjectImage 
-          src={leftImage.src}
-          alt={leftImage.alt}
-        />
-      </div>
-      <div className="triple-image">
-        <ProjectImage 
-          src={centerImage.src}
-          alt={centerImage.alt}
-        />
-      </div>
-      <div className="triple-image">
-        <ProjectImage 
-          src={rightImage.src}
-          alt={rightImage.alt}
-        />
-      </div>
-    </div>
-  );
-};
-

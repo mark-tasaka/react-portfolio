@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './inc/Header';
-import { ProjectPage } from './inc/Module';
+import { ProjectLayout, ProjectGallery, BackToTop } from './inc/Module';
 import './css/Pages.css';
 
 const EnsoBlend = () => {
@@ -159,13 +159,19 @@ const EnsoBlend = () => {
   const projectDescription = `Enso Blend is a branding project for a fictional lines of green tea fusion teas. The word 'Enso' is of Japanese origins and refers to the calligraphy Zen circle. The style of this product emulates a traditional Japanese style; distinct colours are selected for the different tea blends. Gradient colour backgrounds, as opposed to solid colours, are used to represent the blending cultures in the fusions of the tea flavours.`;
 
   return (
-    <ProjectPage 
-      title={projectTitle}
-      description={projectDescription}
-      images={projectImages}
-      activePage="work"
-      Header={Header}
-    />
+    <ProjectLayout activePage="work">
+      <Header activePage="work" />
+      <main>
+        <section className="page standard-modules">
+          <header className="page-header content">
+            <h1 className="title">{projectTitle}</h1>
+            <p className="description">{projectDescription}</p>
+          </header>
+          <ProjectGallery images={projectImages} />
+        </section>
+        <BackToTop />
+      </main>
+    </ProjectLayout>
   );
 };
 

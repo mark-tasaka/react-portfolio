@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import EndUapSecrecy from './components/EndUapSecrecy';
 import KoiBento from './components/KoiBento';
 import AdaraFusion from './components/AdaraFusion';
+import UFO from './components/UFO';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/end-uap-secrecy" element={<EndUapSecrecy />} />
           <Route path="/koi-bento" element={<KoiBento />} />
           <Route path="/adara-fusion" element={<AdaraFusion />} />
+          <Route path="/ufo-report" element={<UFO />} />
         </Routes>
       </div>
     </Router>

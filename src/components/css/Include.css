@@ -40,23 +40,46 @@
   display: flex;
   list-style: none;
   gap: 20px;
+  align-items: flex-end; /* Align items to bottom for consistent baseline */
+  margin: 0;
+  padding: 0;
 }
 
+.social li {
+  display: flex;
+  align-items: flex-end; /* Ensure li elements also align to bottom */
+}
+
+.social a {
+  display: flex;
+  align-items: flex-end; /* Ensure anchor elements align to bottom */
+}
+
+/* SVG icon styles */
 .social .icon {
   width: 24px;
   height: 24px;
   fill: #666;
   transition: fill 0.3s ease;
+  display: block;
 }
 
 .social a:hover .icon {
   fill: #333;
 }
 
+/* PNG icon styles */
 .icon-img {
-  width: 16px;
-  height: 16px;
-  transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  display: block;
+  filter: grayscale(0.3) opacity(0.8); /* Match the gray tone of SVG icons */
+}
+
+.social a:hover .icon-img {
+  filter: grayscale(0) opacity(1);
 }
 
 /* Header Responsive Design */

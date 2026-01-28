@@ -42,7 +42,7 @@ const Header = ({ activePage }) => {
             </li>
             <li>
               <a href="https://www.oldschooladventures.org/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/icons/icon1.png" alt="Old School Adventures" className="icon-img" />
+                <img src="/images/icons/icon2.png" alt="Old School Adventures" className="icon-img" />
               </a>
             </li>
           </ul>

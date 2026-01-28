@@ -7,6 +7,7 @@ import KoiBento from './components/KoiBento';
 import AdaraFusion from './components/AdaraFusion';
 import UFO from './components/UFO';
 import EnsoBlend from './components/EnsoBlend';
+import OptimalTreats from './components/OptimalTreats';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/adara-fusion" element={<AdaraFusion />} />
           <Route path="/ufo-report" element={<UFO />} />
           <Route path="/enso-blend" element={<EnsoBlend />} />
+          <Route path="/optimal-treats" element={<OptimalTreats />} />
         </Routes>
       </div>
     </Router>

@@ -41,8 +41,8 @@ const Header = ({ activePage }) => {
               </a>
             </li>
             <li>
-              <a href="https://www.tasaka-games.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/icons/icon1.png" alt="Tasaka Games" className="icon-img" />
+              <a href="https://www.oldschooladventures.org/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/icons/icon1.png" alt="Old School Adventures" className="icon-img" />
               </a>
             </li>
           </ul>

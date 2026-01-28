@@ -40,6 +40,11 @@ const Header = ({ activePage }) => {
                 </svg>
               </a>
             </li>
+            <li>
+              <a href="https://www.tasaka-games.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/icons/icon1.png" alt="Tasaka Games" className="icon" />
+              </a>
+            </li>
           </ul>
         </div>
       </nav>

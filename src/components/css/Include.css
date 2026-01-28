@@ -53,6 +53,12 @@
   fill: #333;
 }
 
+.icon-img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
 /* Header Responsive Design */
 @media (max-width: 768px) {
   .site-header {

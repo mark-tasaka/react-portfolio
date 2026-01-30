@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './inc/Header';
+import { BackToTop } from './inc/Module'; // Add this import
 import './css/Portfolio.css';
 
 const Portfolio = () => {
@@ -76,12 +77,7 @@ const Portfolio = () => {
           ))}
         </section>
 
-        <section className="back-to-top">
-          <a href="#top">  
-            <span className="arrow">↑</span>
-            <span>Back to Top</span>
-          </a>
-        </section>
+        <BackToTop /> {/* Replace the hardcoded section with this component */}
       </main>
     </div>
   );

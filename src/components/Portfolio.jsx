@@ -40,6 +40,25 @@ const Portfolio = () => {
       title: "End UAP Secrecy",
       image: "/images/cover/uap-secrecy.jpg",
       link: "/end-uap-secrecy"
+    },
+    
+    {
+      id: 7,
+      title: "Art Gallery 1",
+      image: "/images/cover/gallery1.jpg",
+      link: "/art-gallery-1"
+    },
+    {
+      id: 8,
+      title: "Art Gallery 2",
+      image: "/images/cover/gallery2.jpg",
+      link: "/art-gallery-2"
+    },
+    {
+      id: 9,
+      title: "Art Gallery 3",
+      image: "/images/cover/gallery3.jpg",
+      link: "/art-gallery-3"
     }
   ];
 

@@ -8,6 +8,7 @@ import AdaraFusion from './components/AdaraFusion';
 import UFO from './components/UFO';
 import EnsoBlend from './components/EnsoBlend';
 import OptimalTreats from './components/OptimalTreats';
+import Gallery1 from './components/Gallery1';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/ufo-report" element={<UFO />} />
           <Route path="/enso-blend" element={<EnsoBlend />} />
           <Route path="/optimal-treats" element={<OptimalTreats />} />
+          <Route path="/art-gallery-1" element={<Gallery1 />} />
         </Routes>
       </div>
     </Router>

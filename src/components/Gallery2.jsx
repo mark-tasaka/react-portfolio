@@ -73,8 +73,15 @@ const Gallery2 = () => {
       type: 'single',
       id: 'single3',
       src: "/images/art-gallery2/art2_10.jpg",
-      alt: "DCC Eastern Adventures Mock Up",
+      alt: "Orc attack",
       description: "A party of adventurers battling Old School Orcs in the woods.  Illustration created in Photoshop using a digital drawing tablet and pen tool."
+    },
+    {
+      type: 'single',
+      id: 'single4',
+      src: "/images/art-gallery2/art2_11.jpg",
+      alt: "DCC Eastern Adventures Mock Up",
+      description: "Pencil-and-paper conceptual and interior art sketches."
     },
   ];
 

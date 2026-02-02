@@ -10,7 +10,7 @@ const Gallery1 = () => {
       type: 'single',
       id: 1,
       src: "/images/art-gallery1/art1_1.jpg",
-      alt: "Digital art illustration 1",
+      alt: "DCC Eastern Adventures Mock Up",
       description: "A mock up of Dungeon Crawl Classics Eastern Adventures, a tabletop role-playing book I wrote and illustrated."
     },
     // Single image - art1_1.jpg
@@ -18,8 +18,8 @@ const Gallery1 = () => {
       type: 'single',
       id: 1,
       src: "/images/art-gallery1/art1_2-4.jpg",
-      alt: "Digital art illustration 1",
-      description: "Digital art illustration created with Adobe Photoshop."
+      alt: "Eastern Adventures Cover Art",
+      description: "The cover art for Eastern themed role-playing books I designed.  I have published White Box Eastern Adventures (right) and am in the process of writing Red Box Eastern Adventures (left)."
     },
     // Triple images - art1_2.jpg, art1_3.jpg, and art1_4.jpg
     // {
@@ -48,15 +48,15 @@ const Gallery1 = () => {
       images: [
         {
           src: "/images/art-gallery1/art1_5.jpg",
-          alt: "Digital art illustration 5"
+          alt: "DCC Eastern Adventures Character Sheet"
         },
         {
           src: "/images/art-gallery1/art1_6.jpg",
-          alt: "Digital art illustration 6"
+          alt: "Labrynth Lord Character Sheet"
         },
         {
           src: "/images/art-gallery1/art1_7.jpg",
-          alt: "Digital art illustration 7"
+          alt: "DCC Greenleaf Adventures Character Sheet"
         }
       ],
       description: "Created with a digital pen in Photoshop, these Role-Playing Game character sheet have been design to capture the 'Old School' pencil-and-paper style of the early days of the RPG hobby."
@@ -66,7 +66,7 @@ const Gallery1 = () => {
       type: 'single',
       id: 1,
       src: "/images/art-gallery1/art1_8-10.jpg",
-      alt: "Digital art illustration 1",
+      alt: "Pencil and Paper Sketches (Sohei Warrior Monks)",
       description: "Digital art illustration created with Adobe Photoshop."
     },
     // Triple images - art1_11.jpg, art1_12.jpg, and art1_13.jpg

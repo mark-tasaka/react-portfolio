@@ -23,7 +23,7 @@ const Gallery1 = () => {
     },
     {
       type: 'triple',
-      id: 'triple2',
+      id: 'triple1',
       images: [
         {
           src: "/images/art-gallery1/art1_5.jpg",
@@ -51,7 +51,7 @@ const Gallery1 = () => {
     // Triple images - art1_11.jpg, art1_12.jpg, and art1_13.jpg
     {
       type: 'triple',
-      id: 'triple4',
+      id: 'triple2',
       images: [
         {
           src: "/images/art-gallery1/art1_11.jpg",
@@ -71,7 +71,7 @@ const Gallery1 = () => {
     // Triple images - art1_14.jpg, art1_15.jpg, and art1_16.jpg
     {
       type: 'triple',
-      id: 'triple5',
+      id: 'triple3',
       images: [
         {
           src: "/images/art-gallery1/art1_14.jpg",

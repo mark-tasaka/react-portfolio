@@ -19,7 +19,7 @@ const Gallery2 = () => {
           alt: "Manimal"
         }
       ],
-      description: ""
+      description: "Mutant Crawl Classics Characters: Healer (left) and Manimal (right)"
     },
     { // Added missing opening curly brace
       type: 'pair',
@@ -34,7 +34,14 @@ const Gallery2 = () => {
           alt: "Plantient"
         }
       ],
-      description: "Mutant Crawl Classics Characters: Healer, Manimal, Mutant, and Plantient. Hand drawn illustrations created created in Photoshop using a digital pen tool and drawing tablet."
+      description: "Mutant Crawl Classics Characters: Mutant (left) and Plantient (right)"
+    },
+    {
+      type: 'single',
+      id: 1,
+      src: "/images/art-gallery2/art2_5.jpg",
+      alt: "DCC Eastern Adventures Mock Up",
+      description: "A mock up of Dungeon Crawl Classics Eastern Adventures, a tabletop role-playing book I wrote and illustrated."
     },
   ];
 

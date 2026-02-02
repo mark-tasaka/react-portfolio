@@ -21,27 +21,6 @@ const Gallery1 = () => {
       alt: "Eastern Adventures Cover Art",
       description: "The cover art for Eastern themed role-playing books I designed.  I have published White Box Eastern Adventures (right) and am in the process of writing Red Box Eastern Adventures (left)."
     },
-    // Triple images - art1_2.jpg, art1_3.jpg, and art1_4.jpg
-    // {
-    //   type: 'triple',
-    //   id: 'triple1',
-    //   images: [
-    //     {
-    //       src: "/images/art-gallery1/art1_2.jpg",
-    //       alt: "Digital art illustration 2"
-    //     },
-    //     {
-    //       src: "/images/art-gallery1/art1_3.jpg",
-    //       alt: "Digital art illustration 3"
-    //     },
-    //     {
-    //       src: "/images/art-gallery1/art1_4.jpg",
-    //       alt: "Digital art illustration 4"
-    //     }
-    //   ],
-    //   description: "Collection of digital art illustrations for role-playing game websites."
-    // },
-    // Triple images - art1_5.jpg, art1_6.jpg, and art1_7.jpg
     {
       type: 'triple',
       id: 'triple2',

@@ -13,26 +13,34 @@ const Gallery1 = () => {
       alt: "Digital art illustration 1",
       description: "A mock up of Dungeon Crawl Classics Eastern Adventures, a tabletop role-playing book I wrote and illustrated."
     },
-    // Triple images - art1_2.jpg, art1_3.jpg, and art1_4.jpg
+    // Single image - art1_1.jpg
     {
-      type: 'triple',
-      id: 'triple1',
-      images: [
-        {
-          src: "/images/art-gallery1/art1_2.jpg",
-          alt: "Digital art illustration 2"
-        },
-        {
-          src: "/images/art-gallery1/art1_3.jpg",
-          alt: "Digital art illustration 3"
-        },
-        {
-          src: "/images/art-gallery1/art1_4.jpg",
-          alt: "Digital art illustration 4"
-        }
-      ],
-      description: "Collection of digital art illustrations for role-playing game websites."
+      type: 'single',
+      id: 1,
+      src: "/images/art-gallery1/art1_2-4.jpg",
+      alt: "Digital art illustration 1",
+      description: "Digital art illustration created with Adobe Photoshop."
     },
+    // Triple images - art1_2.jpg, art1_3.jpg, and art1_4.jpg
+    // {
+    //   type: 'triple',
+    //   id: 'triple1',
+    //   images: [
+    //     {
+    //       src: "/images/art-gallery1/art1_2.jpg",
+    //       alt: "Digital art illustration 2"
+    //     },
+    //     {
+    //       src: "/images/art-gallery1/art1_3.jpg",
+    //       alt: "Digital art illustration 3"
+    //     },
+    //     {
+    //       src: "/images/art-gallery1/art1_4.jpg",
+    //       alt: "Digital art illustration 4"
+    //     }
+    //   ],
+    //   description: "Collection of digital art illustrations for role-playing game websites."
+    // },
     // Triple images - art1_5.jpg, art1_6.jpg, and art1_7.jpg
     {
       type: 'triple',

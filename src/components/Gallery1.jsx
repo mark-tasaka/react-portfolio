@@ -53,25 +53,13 @@ const Gallery1 = () => {
       ],
       description: "Hand-drawn digital illustrations for tabletop game publications."
     },
-    // Triple images - art1_8.jpg, art1_9.jpg, and art1_10.jpg
+    // Single image - art1_1.jpg
     {
-      type: 'triple',
-      id: 'triple3',
-      images: [
-        {
-          src: "/images/art-gallery1/art1_8.jpg",
-          alt: "Digital art illustration 8"
-        },
-        {
-          src: "/images/art-gallery1/art1_9.jpg",
-          alt: "Digital art illustration 9"
-        },
-        {
-          src: "/images/art-gallery1/art1_10.jpg",
-          alt: "Digital art illustration 10"
-        }
-      ],
-      description: "Digital pen tool illustrations created for gaming content."
+      type: 'single',
+      id: 1,
+      src: "/images/art-gallery1/art1_8-10.jpg",
+      alt: "Digital art illustration 1",
+      description: "Digital art illustration created with Adobe Photoshop."
     },
     // Triple images - art1_11.jpg, art1_12.jpg, and art1_13.jpg
     {

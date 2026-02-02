@@ -8,7 +8,7 @@ const Gallery1 = () => {
     // Single image - art1_1.jpg
     {
       type: 'single',
-      id: 1,
+      id: 'single1',
       src: "/images/art-gallery1/art1_1.jpg",
       alt: "DCC Eastern Adventures Mock Up",
       description: "A mock up of Dungeon Crawl Classics Eastern Adventures, a tabletop role-playing book I wrote and illustrated."
@@ -16,7 +16,7 @@ const Gallery1 = () => {
     // Single image - art1_1.jpg
     {
       type: 'single',
-      id: 1,
+      id: 'single2',
       src: "/images/art-gallery1/art1_2-4.jpg",
       alt: "Eastern Adventures Cover Art",
       description: "The cover art for Eastern themed role-playing books I designed.  I have published White Box Eastern Adventures (right) and am in the process of writing Red Box Eastern Adventures (left)."
@@ -43,7 +43,7 @@ const Gallery1 = () => {
     // Single image - art1_1.jpg
     {
       type: 'single',
-      id: 1,
+      id: 'single3',
       src: "/images/art-gallery1/art1_8-10.jpg",
       alt: "Pencil and Paper Sketches (Sohei Warrior Monks)",
       description: "Digital art illustration created with Adobe Photoshop."

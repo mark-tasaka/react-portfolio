@@ -9,6 +9,7 @@ import UFO from './components/UFO';
 import EnsoBlend from './components/EnsoBlend';
 import OptimalTreats from './components/OptimalTreats';
 import Gallery1 from './components/Gallery1';
+import Gallery2 from './components/Gallery2';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/enso-blend" element={<EnsoBlend />} />
           <Route path="/optimal-treats" element={<OptimalTreats />} />
           <Route path="/art-gallery-1" element={<Gallery1 />} />
+          <Route path="/art-gallery-2" element={<Gallery2 />} />
         </Routes>
       </div>
     </Router>

@@ -34,7 +34,7 @@ const Gallery2 = () => {
           alt: "Plantient"
         }
       ],
-      description: ""
+      description: "Mutant Crawl Classics Characters: Healer, Manimal, Mutant, and Plantient. Hand drawn illustrations created created in Photoshop using a digital pen tool and drawing tablet."
     },
   ];
 

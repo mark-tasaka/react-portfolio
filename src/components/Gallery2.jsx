@@ -69,6 +69,13 @@ const Gallery2 = () => {
       ],
       description: "Mutant Crawl Classics Characters: Rover (left), Sentient (middle) and Shaman (right)"
     },
+    {
+      type: 'single',
+      id: 'single3',
+      src: "/images/art-gallery2/art2_10.jpg",
+      alt: "DCC Eastern Adventures Mock Up",
+      description: "A party of adventurers battling Old School Orcs in the woods.  Illustration created in Photoshop using a digital drawing tablet and pen tool."
+    },
   ];
 
   const projectTitle = "Art Gallery 2";

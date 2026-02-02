@@ -50,6 +50,25 @@ const Gallery2 = () => {
       alt: "DCC Eastern Adventures Mock Up",
       description: "Pencil conceptual sketches of the Mutant Crawl Classics Character Classes for the above digital illustrations."
     },
+    {
+      type: 'triple',
+      id: 'triple1',
+      images: [
+        {
+          src: "/images/art-gallery2/art2_7.jpg",
+          alt: "DCC Eastern Adventures Character Sheet"
+        },
+        {
+          src: "/images/art-gallery2/art2_8.jpg",
+          alt: "Labrynth Lord Character Sheet"
+        },
+        {
+          src: "/images/art-gallery2/art2_9.jpg",
+          alt: "DCC Greenleaf Adventures Character Sheet"
+        }
+      ],
+      description: "Mutant Crawl Classics Characters: Rover (left), Sentient (middle) and Shaman (right)"
+    },
   ];
 
   const projectTitle = "Art Gallery 2";

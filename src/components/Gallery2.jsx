@@ -38,10 +38,10 @@ const Gallery2 = () => {
     },
     {
       type: 'single',
-      id: 1,
+      id: 'single1',
       src: "/images/art-gallery2/art2_5.jpg",
       alt: "DCC Eastern Adventures Mock Up",
-      description: "A mock up of Dungeon Crawl Classics Eastern Adventures, a tabletop role-playing book I wrote and illustrated."
+      description: "Mutant Crawl Classics Adventuring Party: Illustration created in Photoshop using a digital drawing tablet and pen tool."
     },
   ];
 

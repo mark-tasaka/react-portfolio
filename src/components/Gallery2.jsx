@@ -83,6 +83,13 @@ const Gallery2 = () => {
       alt: "DCC Eastern Adventures Mock Up",
       description: "Pencil-and-paper conceptual and interior art sketches."
     },
+    {
+      type: 'single',
+      id: 'single5',
+      src: "/images/art-gallery2/art2_12.jpg",
+      alt: "DCC Eastern Adventures Mock Up",
+      description: "Classic RPG Adventurers: Fighter, Thief and Elf."
+    },
   ];
 
   const projectTitle = "Art Gallery 2";

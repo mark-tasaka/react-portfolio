@@ -11,7 +11,7 @@ const Gallery1 = () => {
       id: 1,
       src: "/images/art-gallery1/art1_1.jpg",
       alt: "Digital art illustration 1",
-      description: "Digital art illustration created with Adobe Photoshop."
+      description: "A mock up of Dungeon Crawl Classics Eastern Adventures, a tabletop role-playing book I wrote and illustrated."
     },
     // Triple images - art1_2.jpg, art1_3.jpg, and art1_4.jpg
     {
@@ -51,7 +51,7 @@ const Gallery1 = () => {
           alt: "Digital art illustration 7"
         }
       ],
-      description: "Hand-drawn digital illustrations for tabletop game publications."
+      description: "Created with a digital pen in Photoshop, these Role-Playing Game character sheet have been design to capture the 'Old School' pencil-and-paper style of the early days of the RPG hobby."
     },
     // Single image - art1_1.jpg
     {
@@ -79,7 +79,7 @@ const Gallery1 = () => {
           alt: "Digital art illustration 13"
         }
       ],
-      description: "Additional digital artwork for role-playing game series."
+      description: "The cover art for three Dungeon Crawl Classics adventure books I wrote and illustrated.  Physical copies of these adventure modules are available to order on DriveThruRPG."
     },
     // Triple images - art1_14.jpg, art1_15.jpg, and art1_16.jpg
     {
@@ -99,7 +99,7 @@ const Gallery1 = () => {
           alt: "Digital art illustration 16"
         }
       ],
-      description: "Final collection of digital illustrations for tabletop game books."
+      description: "Created with a digital pen in Photoshop, these Role-Playing Game character sheet have been design to capture the 'Old School' pencil-and-paper style of the early days of the RPG hobby."
     }
   ];
 

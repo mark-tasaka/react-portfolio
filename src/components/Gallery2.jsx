@@ -40,8 +40,15 @@ const Gallery2 = () => {
       type: 'single',
       id: 'single1',
       src: "/images/art-gallery2/art2_5.jpg",
-      alt: "DCC Eastern Adventures Mock Up",
+      alt: "DCC Eastern Adventures Adventuring Party",
       description: "Mutant Crawl Classics Adventuring Party: Illustration created in Photoshop using a digital drawing tablet and pen tool."
+    },
+    {
+      type: 'single',
+      id: 'single2',
+      src: "/images/art-gallery2/art2_6.jpg",
+      alt: "DCC Eastern Adventures Mock Up",
+      description: "Pencil conceptual sketches of the Mutant Crawl Classics Character Classes for the above digital illustrations."
     },
   ];
 

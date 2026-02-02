@@ -76,15 +76,15 @@ const Gallery1 = () => {
       images: [
         {
           src: "/images/art-gallery1/art1_11.jpg",
-          alt: "Digital art illustration 11"
+          alt: "Beneath the Giant's Head Module Cover"
         },
         {
           src: "/images/art-gallery1/art1_12.jpg",
-          alt: "Digital art illustration 12"
+          alt: "The Cate and the Resurection Module Cover"
         },
         {
           src: "/images/art-gallery1/art1_13.jpg",
-          alt: "Digital art illustration 13"
+          alt: "Murt's Miscalculations Module Cover"
         }
       ],
       description: "The cover art for three Dungeon Crawl Classics adventure books I wrote and illustrated.  Physical copies of these adventure modules are available to order on DriveThruRPG."
@@ -96,15 +96,15 @@ const Gallery1 = () => {
       images: [
         {
           src: "/images/art-gallery1/art1_14.jpg",
-          alt: "Digital art illustration 14"
+          alt: "Mutant Crawl Classics Character Sheet"
         },
         {
           src: "/images/art-gallery1/art1_15.jpg",
-          alt: "Digital art illustration 15"
+          alt: "Basic Fantasy RPG Character Sheet"
         },
         {
           src: "/images/art-gallery1/art1_16.jpg",
-          alt: "Digital art illustration 16"
+          alt: "DCC Empire of the East Character Sheet"
         }
       ],
       description: "Created with a digital pen in Photoshop, these Role-Playing Game character sheet have been design to capture the 'Old School' pencil-and-paper style of the early days of the RPG hobby."

@@ -28,6 +28,21 @@ const Gallery3 = () => {
       ],
       description: "The cover illustration for White Box Eastern Adventures Advanced Edition.  Hand drawn with a digital pen in Photoshop."
     },
+    {
+      type: 'pair',
+      id: 'pair1',
+      images: [
+        {
+          src: "/images/art-gallery3/art3_4.jpg",
+          alt: "Raven and the Moon"
+        },
+        {
+          src: "/images/art-gallery3/art3_5.jpg",
+          alt: "Cawing Crow and the Moon"
+        }
+      ],
+      description: "The Crow, the Moon and the UAP (Hand drawn digital illustrations using a digital pen and Photoshop)"
+    },
   ];
 
   const projectTitle = "Art Gallery 3";

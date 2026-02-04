@@ -81,6 +81,25 @@ const Gallery3 = () => {
       ],
       description: "Pair of Crows: The Digital Illustrations were hand drawn with a digital pen in Adobe Photoshop."
     },
+    {
+      type: 'triple',
+      id: 'triple3',
+      images: [
+        {
+          src: "/images/art-gallery3/art3_12.jpg",
+          alt: "Pair of Crows, a Ring and the UAP"
+        },
+        {
+          src: "/images/art-gallery3/art3_13.jpg",
+          alt: "Holiday Card Mock up"
+        },
+        {
+          src: "/images/art-gallery3/art3_14.jpg",
+          alt: "Holiday Card Mock up"
+        }
+      ],
+      description: "Pair of Crows: The Digital Illustrations were hand drawn with a digital pen in Adobe Photoshop."
+    },
   ];
 
   const projectTitle = "Art Gallery 3";

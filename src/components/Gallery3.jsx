@@ -49,18 +49,18 @@ const Gallery3 = () => {
       images: [
         {
           src: "/images/art-gallery3/art3_6.jpg",
-          alt: "DCC Eastern Adventures Character Sheet"
+          alt: "Holiday Card Mock up"
         },
         {
           src: "/images/art-gallery3/art3_7.jpg",
-          alt: "Labrynth Lord Character Sheet"
+          alt: "Holiday Card Mock up"
         },
         {
           src: "/images/art-gallery3/art3_8.jpg",
-          alt: "DCC Greenleaf Adventures Character Sheet"
+          alt: "Pair of Crows, a Ring and the UAP"
         }
       ],
-      description: "Created with a digital pen in Photoshop, these Role-Playing Game character sheet have been design to capture the 'Old School' pencil-and-paper style of the early days of the RPG hobby."
+      description: "Pair of Crows: The Digital Illustrations were hand drawn with a digital pen in Adobe Photoshop."
     },
   ];
 

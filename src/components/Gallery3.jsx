@@ -43,6 +43,25 @@ const Gallery3 = () => {
       ],
       description: "The Crow, the Moon and the UAP (Hand drawn digital illustrations using a digital pen and Photoshop)"
     },
+    {
+      type: 'triple',
+      id: 'triple1',
+      images: [
+        {
+          src: "/images/art-gallery3/art3_6.jpg",
+          alt: "DCC Eastern Adventures Character Sheet"
+        },
+        {
+          src: "/images/art-gallery3/art3_7.jpg",
+          alt: "Labrynth Lord Character Sheet"
+        },
+        {
+          src: "/images/art-gallery3/art3_8.jpg",
+          alt: "DCC Greenleaf Adventures Character Sheet"
+        }
+      ],
+      description: "Created with a digital pen in Photoshop, these Role-Playing Game character sheet have been design to capture the 'Old School' pencil-and-paper style of the early days of the RPG hobby."
+    },
   ];
 
   const projectTitle = "Art Gallery 3";

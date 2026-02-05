@@ -100,6 +100,25 @@ const Gallery3 = () => {
       ],
       description: "Cleric, Magic User and Halfling: Hand drawn illustrations created with a digital pen"
     },
+    {
+      type: 'triple',
+      id: 'triple4',
+      images: [
+        {
+          src: "/images/art-gallery3/art3_15.jpg",
+          alt: "Pen and Paper Sketches"
+        },
+        {
+          src: "/images/art-gallery3/art3_16.jpg",
+          alt: "Pen and Paper Sketches"
+        },
+        {
+          src: "/images/art-gallery3/art3_17.jpg",
+          alt: "Pen and Paper Sketches"
+        }
+      ],
+      description: "Pencil and paper conceptual and interior art sketches"
+    }
   ];
 
   const projectTitle = "Art Gallery 3";

@@ -87,18 +87,18 @@ const Gallery3 = () => {
       images: [
         {
           src: "/images/art-gallery3/art3_12.jpg",
-          alt: "Pair of Crows, a Ring and the UAP"
+          alt: "Cleric"
         },
         {
           src: "/images/art-gallery3/art3_13.jpg",
-          alt: "Holiday Card Mock up"
+          alt: "Magic User"
         },
         {
           src: "/images/art-gallery3/art3_14.jpg",
-          alt: "Holiday Card Mock up"
+          alt: "Halfling"
         }
       ],
-      description: "Pair of Crows: The Digital Illustrations were hand drawn with a digital pen in Adobe Photoshop."
+      description: "Cleric, Magic User and Halfling: Hand drawn illustrations created with a digital pen"
     },
   ];
 

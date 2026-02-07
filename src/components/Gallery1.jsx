@@ -38,7 +38,7 @@ const Gallery1 = () => {
           alt: "DCC Greenleaf Adventures Character Sheet"
         }
       ],
-      description: "Created with a digital pen in Photoshop, these Role-Playing Game character sheet have been design to capture the 'Old School' pencil-and-paper style of the early days of the RPG hobby."
+      description: "This section features hand-drawn illustrations I created either for my websites or for my published role-playing games.  The digital art was created with a digital pen and drawing tablet.  The pencil and paper illustrations are either conceptual sketches or interior illustrations for my game books."
     },
     // Single image - art1_1.jpg
     {

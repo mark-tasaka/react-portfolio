@@ -122,7 +122,7 @@ const Gallery3 = () => {
   ];
 
   const projectTitle = "Art Gallery 3";
-  const projectDescription = `The digital art pieces in this gallery were hand-drawn with a digital pen tool in Adobe Photoshop. The illustrations are for my hobby role-playing game websites, and for a series of tabletop game books I published.`;
+  const projectDescription = `This section features hand-drawn illustrations I created either for my websites or for my published role-playing games.  The digital art was created with a digital pen and drawing tablet.  The pencil and paper illustrations are either conceptual sketches or interior illustrations for my game books.`;
 
   // Update document title when component mounts
   useEffect(() => {

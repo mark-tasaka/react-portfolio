@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Header from './inc/Header';
 import './css/Contact.css';
 
@@ -8,6 +9,8 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -17,10 +20,33 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID',        // Replace with your actual Service ID
+        'YOUR_TEMPLATE_ID',       // Replace with your actual Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: 'tasaka.publishing@gmail.com'
+        },
+        'YOUR_PUBLIC_KEY'         // Replace with your actual Public Key
+      );
+      
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+      alert('Message sent successfully!');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus('error');
+      alert('Failed to send message. Please try again.');
+    }
+    
+    setIsSubmitting(false);
   };
 
   return (
@@ -47,6 +73,12 @@ const Contact = () => {
           </div>
 
           <div className="contact-form-container">
+            {submitStatus === 'success' && (
+              <div className="success-message" style={{color: 'green', marginBottom: '1rem'}}>
+                Thank you! Your message has been sent successfully.
+              </div>
+            )}
+            
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">
@@ -60,6 +92,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   placeholder="Your Name..."
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -75,6 +108,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   placeholder="Your Email Address..."
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -90,12 +124,17 @@ const Contact = () => {
                   placeholder="Your Message..."
                   rows="6"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
               <div className="form-submit">
-                <button type="submit" className="submit-btn">
-                  Submit
+                <button 
+                  type="submit" 
+                  className="submit-btn"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Submit'}
                 </button>
               </div>
             </form>

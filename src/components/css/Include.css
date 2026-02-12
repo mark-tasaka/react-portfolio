@@ -82,6 +82,12 @@
   filter: grayscale(0) opacity(1);
 }
 
+/* Add this to your existing CSS */
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
 /* Header Responsive Design */
 @media (max-width: 768px) {
   .site-header {
@@ -93,5 +99,10 @@
   .nav-container {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .nav-links {
+    gap: 30px;
+    justify-content: center;
   }
 }

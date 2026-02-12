@@ -11,11 +11,13 @@ const Header = ({ activePage }) => {
         </div>
       </div>
       <nav className="nav-container">
-        <div className="gallery-title">
-          <Link to="/work" className={activePage === 'work' ? 'active' : ''}>Work</Link>
-        </div>
-        <div className="page-title">
-          <Link to="/contact" className={activePage === 'contact' ? 'active' : ''}>Contact</Link>
+        <div className="nav-links">
+          <div className="gallery-title">
+            <Link to="/work" className={activePage === 'work' ? 'active' : ''}>Work</Link>
+          </div>
+          <div className="page-title">
+            <Link to="/contact" className={activePage === 'contact' ? 'active' : ''}>Contact</Link>
+          </div>
         </div>
         <div className="social">
           <ul>
@@ -23,7 +25,7 @@ const Header = ({ activePage }) => {
               <a href="https://www.linkedin.com/in/mark-tasaka/" target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 30 24" className="icon">
                   <path d="M19.6,19v-5.8c0-1.4-0.5-2.4-1.7-2.4c-1,0-1.5,0.7-1.8,1.3C16,12.3,16,12.6,16,13v6h-3.4
-                    c0,0,0.1-9.8,0-10.8H16v1.5c0,0,0,0,0,0h0v0C16.4,9,17.2,7.9,19,7.9c2.3,0,4,1.5,4,4.9V19H19.6z M8.9,6.7L8.9,6.7
+                    c0,0,0.1-9.8,0-10.8H16v1.5c0,0,0,0,0h0v0C16.4,9,17.2,7.9,19,7.9c2.3,0,4,1.5,4,4.9V19H19.6z M8.9,6.7L8.9,6.7
                     C7.7,6.7,7,5.9,7,4.9C7,3.8,7.8,3,8.9,3s1.9,0.8,1.9,1.9C10.9,5.9,10.1,6.7,8.9,6.7z M10.6,19H7.2V8.2h3.4V19z"/>
                 </svg>
               </a>

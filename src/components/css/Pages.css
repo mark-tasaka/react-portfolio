@@ -161,6 +161,19 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Responsive Design for 1024px */
+@media (max-width: 1024px) {
+  .image-triple-container {
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .triple-image {
+    width: 100%;
+  }
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -204,6 +217,7 @@
   }
   .image-triple-container {
     flex-direction: column;
+    width: 100%;
     gap: 20px;
   }
   
